@@ -5,5 +5,5 @@ data "aws_ami" "ami" {
 }
 
 data "aws_security_group" "allow-all" {
-  Name = "allow-all"
+  name = "allow-all"
 }
