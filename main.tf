@@ -4,7 +4,7 @@ resource "aws_instance" "ami" {
   vpc_security_group_ids = [data.aws_security_group.allow-all.id]
 
   tags = {
-    Name = "ami-server"
+    Name = "master-ami-server"
   }
 }
 
