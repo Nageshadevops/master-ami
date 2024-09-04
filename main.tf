@@ -11,8 +11,8 @@ resource "aws_instance" "ami" {
 resource "null_resource" "ansible" {
   connection {
     type     = "ssh"
-    user     = ec2-user
-    password = DevOps321
+    user     = var.ssh_user
+    password = var.ssh_pass
     host     = aws_instance.ami.private_ip
   }
 
