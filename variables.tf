@@ -1,5 +1,7 @@
-variable "ssh_user" {}
-variable "ssh_pass" {}
+variable "ssh_user" {
+  default     = "ec2-user"
+}
 
-ssh_user = "ec2-user"
-ssh_pass = "DevOps321"
+variable "ssh_pass" {
+  default     = "DevOps321"
+}
